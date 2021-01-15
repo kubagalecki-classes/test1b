@@ -8,7 +8,7 @@ Napisz klasę `Artysta`, która posiada:
 - publiczny konstruktor domyślny, tworzący muzyka `"Anonim"` o zerowej liczbie słuchaczy
 - publiczny konstruktor parametryczny `Artysta(const std::string&, unsigned)`, który wykorzystuje listę inicjalizacyjną do nadania wartości polom klasy
 - publiczną metodę `void graj(std::ostream&) const`, która drukuje do podanego strumienia tekst "[pseudonim]: [liczba fanów]"
-- publiczny getter `const std::string& getPseudonim() const`, zwracający liczbę pseudonim
+- publiczny getter `const std::string& getPseudonim() const`, zwracający pseudonim
 - publiczny getter `unsigned getSluchacze() const`, zwracający liczbę słuchaczy
 
 **Uwaga**: zwróć uwagę na poprawne formatowanie w metodzie `graj`. Między wartościami odpowiednich pól powinny się znaleźć jedynie znaki dwukropka i spacji.
@@ -34,7 +34,7 @@ Napisz szablon klasy `ArtystaPlusInstrument`, który:
 - posiada prywatne pole `a` typu `Artysta`
 - posiada prywatne pole `i` typu, którym jest sparametryzowany
 - posiada publiczny konstruktor parametryczny `ArtystaPlusInstrument(const Artysta&, const T&)`, inicjalizujący odpowiednio pola klasy `ArtystaPlusInstrument<T>`
-- posiada publiczną metodę `unsigned koncert()`, która zwraca wynik zawołania metody `liczbaUczestnikow` obiektu `i` z argumentem będącym liczbą słuchaczy artysty `a`.
+- posiada publiczną metodę `unsigned koncert()`, która zwraca wynik zawołania metody `liczbaUczestnikow` obiektu `i` z argumentem `a`.
 
 ## Zadanie 4
 Napisz funkcję `stworzZespol`, która:
